@@ -1,15 +1,11 @@
 from django.shortcuts import render
 from django.http import HttpResponse as s
-
 # Create your views here.
-def f(request):
+def index(request):
+    return s("<p> INDEX </p>")
+def Home(request):
+    return s("<p> HOME</p>")
+def Course(request):
+    return s("<p> Course</p>")
 
-    return render(request,'f.html')
-def g(request):
-    return render(request,'g.html')
-def h(request):
-    return render(request, 'h.html')
 
-
-def i(request):
-    return render(request, 'i.html')
